@@ -1,11 +1,11 @@
 // ===== CONFIG - EDIT DI SINI =====
 const BIRTHDAY_DATE = new Date('2026-06-09T00:00:00');
 
-const LETTER = `Happy Birthday to the most handsome soul who lights up my world! 🌹✨
+const LETTER = `Happy Birthday to the most handsome boy who lights up my world! 🌹✨
 
-Setiap momen bersamamu terasa seperti perayaan, tapi hari ini ekstra spesial karena semuanya tentang kamu. Aku sangat bersyukur atas cintamu, senyummu, dan kebahagiaan tanpa henti yang kamu bawa ke hidupku. Happy Level 20, Cel! 🗿✨
+Setiap momen bareng kamu terasa seperti perayaan, tapi hari ini ekstra spesial karena semuanya tentang kamu. Aku sangat bersyukur atas cintamu, senyummu, dan kebahagiaan tanpa henti yang kamu bawa ke hidupku. Happy Level 20, Cel! 🗿✨
 
-Jir, akhirnya ya resmi lepas juga dari kasta belasan tahun dan masuk ke kepala dua. Cepet banget sih, perasaan baru kemaren aku nganggep kamu bocil banget. Di umur baru ini, tolong ya, drama-drama lebaynya dikurangi 😾
+Akhirnya ya resmi lepas juga dari kasta belasan tahun dan masuk ke kepala dua. Cepet banget sih, perasaan baru kemaren aku nganggep kamu bocil banget. Di umur baru ini, tolong ya, drama drama lebaynya dikurangi 😾
 
 Aku tau tahun ini kamu lagi fokus fokusnya ngejar cita citamu, Sekolah Kedinasan. Aku gamau nambahin beban atau bikin kamu stres, tapi aku cuma mau bilang: I've got your back. Apapun proses yang bakal kamu laluin nanti, capeknya kaya gimana, aku bakal dukung terus.
 
@@ -15,7 +15,7 @@ Tunjukin kalau Marcel v2.0 ini bener-bener versi laki-laki yang bisa diandelin d
 
 Anggep aja rasa laper pas diet itu adalah effort buat dapet maniac di kehidupan nyata 🥰
 
-Makasih ya udah jadi Marcel yang kukenal dan nemenin aku. Maaf aku sering malesin atau ngebacotin kamu. Semoga di umur 20 ini, semua doa kamu jadi answered prayers. Sukses buat tesnya, sukses buat dietnya, dan jangan lupa bahagia.
+Makasih ya udah jadi Marcel yang kukenal dan nemenin aku. Maaf aku sering malesin atau ngebacotin kamu. Semoga di umur 20 ini, semua doa kamu jadi answered prayers. Sukses buat tesnya, sukses buat dietnya, dan jangan lupa bahagia...
 
 Happy 20th Birthday, Cel. Go get your dream! God bless you ❤️`;
 // ===== END CONFIG =====
