@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Marcel 🐾</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css" />
+</head>
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="./music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- POPUP MUSIK -->
+<div class="music-popup" id="musicPopup">
+  <div class="popup-box">
+    <div class="popup-cats">🐈‍⬛🧡🐱</div>
+    <h2>Haii Marcel!</h2>
+    <p>Mau puter musik dulu ga?</p>
+    <div class="popup-btns">
+      <button onclick="startSite(true)" class="btn-yes">Mauu 🎵</button>
+      <button onclick="startSite(false)" class="btn-no">Gausaa</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 1: GREETING + COUNTDOWN + DATE ANIMATION -->
+<section class="page" id="page1">
+  <div class="paw-bg" id="pawBg"></div>
+  <div class="page1-content">
+    <div class="cat-row">
+      <span class="cat-anim">🐈‍⬛</span>
+      <span class="cat-anim" style="animation-delay:0.3s">🎂</span>
+      <span class="cat-anim" style="animation-delay:0.6s">🧡</span>
+    </div>
+    <h1 class="greeting-title">Happy Birthday,<br><span class="name-highlight">Marcel</span></h1>
+    <p class="greeting-sub">Pramudhita Ananda Marcelino 💚</p>
+
+    <!-- Animasi tanggal -->
+    <div class="date-anim-wrap">
+      <div class="date-display">
+        <span id="animDay">9</span>
+        <span id="animMonth">Juni</span>
+        <span id="animYear">2006</span>
+      </div>
+      <div class="date-label">tanggal lahirmu yang selalu aku inget 🐾</div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown-wrap">
+      <p class="countdown-label">menuju hari spesialmu</p>
+      <div class="countdown-boxes">
+        <div class="countdown-box">
+          <span id="cdDays">00</span>
+          <small>hari</small>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-box">
+          <span id="cdHours">00</span>
+          <small>jam</small>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-box">
+          <span id="cdMins">00</span>
+          <small>menit</small>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-box">
+          <span id="cdSecs">00</span>
+          <small>detik</small>
+        </div>
+      </div>
+    </div>
+
+    <button class="next-btn" onclick="goToPage(2)">lanjut 🐾</button>
+  </div>
+</section>
+
+<!-- PAGE 2: KATA KATA ROMANTIS -->
+<section class="page hidden" id="page2">
+  <div class="page2-content">
+    <div class="words-container" id="wordsContainer">
+      <p class="word-line" data-delay="0">kamu tau ga sih...</p>
+      <p class="word-line" data-delay="1200">ada orang yang selalu inget kamu</p>
+      <p class="word-line" data-delay="2600">bahkan di hari-hari yang biasa aja</p>
+      <p class="word-line" data-delay="4000">yang senyum sendiri kalo inget tingkah kamu</p>
+      <p class="word-line" data-delay="5400">yang diem-diem doain kamu tiap malem</p>
+      <p class="word-line" data-delay="6800">yang bangga sama kamu</p>
+      <p class="word-line" data-delay="8000">meskipun kamu sendiri ga sadar 🐾</p>
+      <p class="word-line big" data-delay="9400">orang itu... aku 🧡</p>
+    </div>
+    <button class="next-btn hidden" id="nextBtn2" onclick="goToPage(3)">baca suratnya 💌</button>
+  </div>
+</section>
+
+<!-- PAGE 3: SURAT PANJANG -->
+<section class="page hidden" id="page3">
+  <div class="page3-content">
+    <div class="letter-header">
+      <div class="letter-icon">💌</div>
+      <h2 class="letter-title">untuk Marcel,</h2>
+    </div>
+    <div class="letter-box">
+      <p class="letter-text" id="letterText"></p>
+      <span class="typing-cursor" id="letterCursor"></span>
+    </div>
+    <button class="next-btn hidden" id="nextBtn3" onclick="goToPage(4)">lihat foto kita 📷</button>
+  </div>
+</section>
+
+<!-- PAGE 4: GALERI FOTO -->
+<section class="page hidden" id="page4">
+  <div class="page4-content">
+    <h2 class="gallery-title">momen yang aku suka 🐾</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" style="animation-delay:0.1s">
+        <img src="./img/photo1.jpg" alt="foto 1" onerror="this.parentElement.classList.add('no-photo')" />
+        <div class="photo-placeholder-text">📷 photo1.jpg</div>
+      </div>
+      <div class="gallery-item" style="animation-delay:0.2s">
+        <img src="./img/photo2.jpg" alt="foto 2" onerror="this.parentElement.classList.add('no-photo')" />
+        <div class="photo-placeholder-text">📷 photo2.jpg</div>
+      </div>
+      <div class="gallery-item" style="animation-delay:0.3s">
+        <img src="./img/photo3.jpg" alt="foto 3" onerror="this.parentElement.classList.add('no-photo')" />
+        <div class="photo-placeholder-text">📷 photo3.jpg</div>
+      </div>
+      <div class="gallery-item" style="animation-delay:0.4s">
+        <img src="./img/photo4.jpg" alt="foto 4" onerror="this.parentElement.classList.add('no-photo')" />
+        <div class="photo-placeholder-text">📷 photo4.jpg</div>
+      </div>
+      <div class="gallery-item wide" style="animation-delay:0.5s">
+        <img src="./img/photo5.jpg" alt="foto 5" onerror="this.parentElement.classList.add('no-photo')" />
+        <div class="photo-placeholder-text">📷 photo5.jpg</div>
+      </div>
+    </div>
+    <div class="final-message">
+      <p>happy 20th birthday, Cel 🎂</p>
+      <p class="final-sub">go get your dream. God bless you ❤️</p>
+      <p class="final-from">— Nana 🐾</p>
+    </div>
+  </div>
+</section>
+
+<script src="./script/main.js"></script>
+</body>
+</html>
